@@ -1,0 +1,16 @@
+//Override Foundation default variables
+
+li {
+  list-style-type: none,
+}
+
+iframe {
+
+}
+
+.media-object {
+  margin-bottom: 0;
+  .thumbnail {
+    margin-bottom: 0;
+  }
+}
