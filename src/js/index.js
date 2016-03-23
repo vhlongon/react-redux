@@ -1,24 +1,22 @@
-import React, {Component} from 'react';
+//core dependencies
 import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
 
-import _ from 'lodash';
+// redux specific stuff to create a provider and store
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
+//import the component and the reducers
+import App from './components/app'
+import reducers from './reducers';
+
+//import your styles
 import css from '../scss/styles.scss';
 
-class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render = () => {
-    return (
-      <h1>{this.props.title}</h1>
-    );
-  }
-}
-
+// Renader the app by wrapping the component in a provider
 ReactDOM.render(
-  <App title='React Redux app' />,
+  <Provider store={createStore(reducers)}>
+    <App title="React-Redux book list App"/>
+  </Provider>,
   document.querySelector('.react-root')
 );
