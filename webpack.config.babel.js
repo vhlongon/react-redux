@@ -26,8 +26,8 @@ module.exports = {
       // browse to http://localhost:3434/ during development,
       // ./public directory is being served
       host: 'localhost',
-      port: 3430,
-      proxy: 'http://localhost:3434/',
+      port: 4240,
+      proxy: 'http://localhost:4242/',
       files: ['dist/css/*.css', 'dist/images/*.*', '**/*.html', '!node_modules/**/*.html']
     })
   ],
