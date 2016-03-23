@@ -1,4 +1,3 @@
-// var path = require('path');
 import path from 'path';
 import webpack from 'webpack';
 import BrowserSyncPlugin from 'browser-sync-webpack-plugin';
@@ -13,7 +12,7 @@ module.exports = {
   devServer: {
     inline: true,
     hot: true,
-    port: 3434,
+    port: 4242,
     open: true
   },
   // resolve: {
