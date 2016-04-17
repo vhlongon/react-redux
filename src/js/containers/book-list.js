@@ -8,7 +8,7 @@ class BookList extends Component {
     return this.props.books.map((book) => {
       return (
         <li
-          key={book.title} 
+          key={book.title}
           onClick={() => this.props.selectBook(book)}
           className="list-group-item">
           {book.title}</li>
@@ -28,7 +28,6 @@ class BookList extends Component {
 function mapStateToProps(state) {
   // Whatever is returned will show up as props
   // inside of BookList
-  console.log(state);
   return {
     books: state.books
   };
